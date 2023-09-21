@@ -1,13 +1,10 @@
 #include "main.h"
-
 /**
- * reset_to_98 - Entry point
+ *reset_to_98 - resets value in address referenced by pointer.
+ *@n: pointer.
  *
- * Description: change the value of a variable n using pointers
- *
- * @n: memory adrress of variable n
+ *Return: void.
  */
-
 void reset_to_98(int *n)
 {
 	*n = 98;
