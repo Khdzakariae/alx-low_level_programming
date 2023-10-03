@@ -1,8 +1,20 @@
+#include "main.h"
+#include <unistd.h>
 
-int main(int argc, char *argv[] __attribute__((unused)))
+/**
+ * main - print arg passed to it
+ * @ac: argument count
+ * @av: argument var
+ * Return: Always 0.
+ */
+
+int main(int ac, char **av)
 {
-if (argc > 0)
-printf("%d\n", argc - 1);
+	int num;
 
-return (0);
+	(void)av;
+	num = ac - 1 + '0';
+	write(1, &num, 1);
+	write(1, "\n", 1);
+	return (0);
 }
